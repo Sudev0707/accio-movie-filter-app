@@ -20,20 +20,7 @@ const App = () => {
         }
     };
 
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        console.log("Scrolled to top (Top button clicked)");
-    };
-    
-    const handleFilterStatus = () => {
-        if (activeGenre) {
-            console.log(`Current active filter: ${activeGenre}`);
-            alert(`🎬 Active genre filter: "${activeGenre}". Showing ${filteredMovies.length} movies.`);
-        } else {
-            console.log("No active filter. Showing all movies.");
-            alert("No active genre filter. Displaying all 15 movies.");
-        }
-    };
+   
     
     const handleResetFilters = () => {
         setActiveGenre(null);
